@@ -24,6 +24,7 @@ $text-color: #636b6f;
 
 // Navbar
 $navbar-default-bg: #FD974F;
+$navbar-default-link-color:white;
 // Buttons
 $btn-default-color: $text-color;
 
@@ -33,4 +34,4 @@ $input-border-focus: lighten($brand-primary, 25%);
 $input-color-placeholder: lighten($text-color, 30%);
 
 // Panels
-$panel-default-heading-bg: #fff;
+$panel-default-heading-bg: $navbar-default-bg;
