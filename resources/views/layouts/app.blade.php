@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-
+	<link href="/css/top-nav.css" rel="stylesheet">
     <!-- Scripts -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Catamaran:300,400,100' rel='stylesheet' type='text/css'>
