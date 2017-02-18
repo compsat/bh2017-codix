@@ -3,8 +3,9 @@
 <div class="container" style="padding: 0 0 20px 0; margin: 0px !important; width: 100%">
 <div id="myCarousel" class="carousel slide " data-ride="carousel">
   <div class="col-md-12">
-    <div class="main-text col-md-12 text-center" style="z-index: 100">
+    <div class="main-text col-md-12 text-center" style="z-index: 100; padding-top: 100px">
       <h1>Avad INSERT LOGO HERE</h1>
+      <a href="{{url ('/register')}}" type="button" class="btn btn-clear btn-lg">Sign Up</a>
     </div>
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -20,7 +21,6 @@
       <div class="carousel-caption">
         <h3>Aid Existing Relief Campaigns</h3>
         <p>Donate to the victims of Yolanda Right Now!</p>
-        <p><a href="{{ url('/register') }}" class="btn btn-lg btn-primary">Sign up now!</a>
       </div>
     </div>
     <div class="item">
@@ -28,7 +28,6 @@
       <div class="carousel-caption">
         <h3>International Coast Cleaning</h3>
         <p>Join efforts to create a cleaner environment!</p>
-        <p><a href="{{ url('/register') }}" class="btn btn-lg btn-primary">Sign up now!</a>
       </div>
     </div>
 
@@ -37,7 +36,6 @@
       <div class="carousel-caption">
         <h3>Teach the Filipinos of Tomorrow!</h3>
         <p>Teach for the Philippines</p>
-        <p><a href="{{ url('/register') }}" class="btn btn-lg btn-primary">Sign up now!</a>
 
       </div>
     </div>
@@ -46,7 +44,6 @@
       <div class="carousel-caption">
         <h3>Help Build a Better Community!</h3>
         <p>Gawad Kalinga</p>
-        <p><a href="{{ url('/register') }}" class="btn btn-lg btn-primary">Sign up now!</a>
       </div>
     </div>
   </div>

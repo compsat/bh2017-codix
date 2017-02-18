@@ -7694,4 +7694,10 @@ button.close {
     width: 96.66666666666666%;
     color: #FFF;
   }
+.btn-clear {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #FFF;
+  margin-right: 15px;
+}
 /*# sourceMappingURL=app.css.map */

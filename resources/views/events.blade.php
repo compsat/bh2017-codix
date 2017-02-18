@@ -6,7 +6,7 @@
     <h2 class="panel-title">EVENT NAME</h2><img src="teachLogo.jpg" class="icon">
   </div>
   <div class="panel-body">
-    <h3>NAME OF ORGANIZATION</h3>
+    <h3>NAME OF ORGANIZATION</h3><img src="teachScaled.jpg" class="right" style="width: 15%; height: 15%">
     <p>DATE</p>
     <span class="glyphicon glyphicon-map-marker"><p>LOCATION</p></span>
     <p>description</p>
@@ -24,7 +24,7 @@
     <h2 class="panel-title">EVENT NAME</h2><img src="GKLogo.jpg" class="icon">
   </div>
   <div class="panel-body">
-    <h3>NAME OF ORGANIZATION</h3>
+    <h3>NAME OF ORGANIZATION</h3><img src="newsVolunteer.jpg" class="right" style="width: 15%; height: 15%">
     <p>DATE</p>
     <span class="glyphicon glyphicon-map-marker"><p>LOCATION</p></span>
     <p>description</p>
