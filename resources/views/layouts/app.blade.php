@@ -14,6 +14,20 @@
     <link href="/css/app.css" rel="stylesheet">
 
     <!-- Scripts -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran:300,400,100' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <!-- Calling jquery first -->
+    <!-- <script language="JavaScript" type="text/javascript" src="scripts/jquery.js"></script>
+    <script language="JavaScript" type="text/javascript" src="scripts/bootstrap.min.js"></script> -->
+      <!-- Carousel -->
+    <!-- <script language="JavaScript" type="text/javascript">
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          interval: 3000
+        })
+      });
+    </script> -->
     <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
