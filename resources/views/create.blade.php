@@ -47,8 +47,8 @@
 			    </div>
 				<div class="col-md-2">
 					<select name = "type" id='type' class="form-control">
-						<option value="People" selected>People</option>
-						<option value="Liters">Liters</option>
+						<option value="Volunteer/s" selected>Volunteer/s</option>
+						<option value="Liter/s">Liter/s</option>
 						<option value="Php">Php</option>
 					</select>
 				</div>
