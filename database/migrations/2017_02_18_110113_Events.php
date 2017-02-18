@@ -18,9 +18,10 @@ class Events extends Migration
 	    $table->increments('id') ;
 	    $table->string('title');
 	    $table->longText('description');
-	    $table->integer('donations');
+	    $table->integer('donations')->default(0);
 	    $table->string('type');
 	    $table->integer('goal');
+	    $table->string('author');
 	    $table->string('location');
 	    $table->string('tag');
 	    $table->timestamps();

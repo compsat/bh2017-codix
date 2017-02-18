@@ -28,7 +28,7 @@ class EventController extends Controller
 			'type' => $data['type'],
 			'goal' => $data['goal'],
 			'location' => $data['location'],
-			'author' => $user['Name'],
+			'author' => $user['name'],
 			'tag' => $data['tag'],
 		]);
 		return Redirect::to('/home');
