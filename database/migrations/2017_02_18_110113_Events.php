@@ -23,6 +23,7 @@ class Events extends Migration
 	    $table->integer('goal');
 	    $table->string('date');
 	    $table->string('location');
+	    $table->string('tag');
 	    $table->timestamps();
 	});	    
     }

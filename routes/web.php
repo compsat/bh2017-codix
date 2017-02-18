@@ -12,9 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('splash');
 });
 
 Auth::routes();
 
 Route::get('/home', 'EventController@show');
+
+

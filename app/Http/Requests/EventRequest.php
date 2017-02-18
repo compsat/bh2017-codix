@@ -30,6 +30,8 @@ class EventRequest extends FormRequest
 		'goal' => 'required',
 		'date' => 'required',
 		'location' => 'required|max:255',
+		'author' => 'required',
+		'tag' => 'required',
         ]);
     }
 }
