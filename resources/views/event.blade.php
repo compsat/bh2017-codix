@@ -20,6 +20,10 @@
 	</div>
 	<div class = "col-md-8">
 		<div class = "panel panel-default">
+			@foreach ($event->comments as $comment)	
+				{{ $comment->title }}
+				{{ $comment->description }}
+			@endforeach
 		</div>
 	</div>
 </div>
