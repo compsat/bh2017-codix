@@ -11,7 +11,7 @@ use Redirect;
 
 class EventController extends Controller
 {
-	public function show()
+	public function index()
 	{
 		$events = DB::table('events')->latest()->paginate(4);
 		return view('events', ['events' => $events]);
@@ -20,7 +20,7 @@ class EventController extends Controller
 	public function create(Request $request)
 	{
 		$data = $request->all();
-		$org = Auth::user();
+		$user = Auth::user();
 
 		Event::create([
 			'title' => $data['title'],
@@ -33,5 +33,16 @@ class EventController extends Controller
 			'tag' => $data['tag'],
 		]);
 		return Redirect::to('/home');
+	}	
+
+	public function show(Request $request , $id)
+	{
+		$event = DB::table('events')->where('id', $id)->first();
+		return view("event", ['event' => $event]);
+	}	
+
+	public function showCreate()
+	{
+		return view("create");
 	}	
 }

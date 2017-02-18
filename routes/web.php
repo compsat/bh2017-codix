@@ -11,12 +11,25 @@
 |
 */
 
+//splash routing
 Route::get('/', function () {
     return view('splash');
 });
 
+//Routes for authentication
 Auth::routes();
 
-Route::get('/home', 'EventController@show');
+//Event hub
+Route::get('/home', 'EventController@index');
+
+//Routing for showing individual events
+Route::get('/event/{id}', 'EventController@show');
+
+//creating events
+Route::post('/create',
+	['as' => 'event_create', 'uses' => 'EventController@create']);
+//showing the form for creating events
+Route::get('/create',
+	['as' => 'event_show', 'uses' => 'EventController@showCreate']);
 
 
