@@ -13,7 +13,7 @@ class EventRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -23,8 +23,13 @@ class EventRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            //
-        ];
+        return Validator::make($data, [
+		'title'	=> 'required|max:255',
+		'description' => 'required',
+		'type' => 'required',
+		'goal' => 'required',
+		'date' => 'required',
+		'location' => 'required|max:255',
+        ]);
     }
 }
