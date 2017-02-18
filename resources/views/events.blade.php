@@ -3,7 +3,7 @@
 
 <div class="panel panel-default col-md-4">
   <div class="panel-heading">
-    <h2 class="panel-title">EVENT NAME</h2>
+    <h2 class="panel-title">EVENT NAME</h2><img src="teachLogo.jpg" class="icon">
   </div>
   <div class="panel-body">
     <h3>NAME OF ORGANIZATION</h3>
@@ -16,12 +16,12 @@
         <span class="sr-only">20% Complete</span>
       </div>
     </div>
-    <button type="button" class="btn btn-default">Pledge Now!</button>
+    <a href="LINK TO IMAGE EVENT"><button type="button" class="btn btn-default">Pledge Now!</button></a>
   </div>
 </div>
 <div class="panel panel-default col-md-4">
   <div class="panel-heading">
-    <h2 class="panel-title">EVENT NAME</h2>
+    <h2 class="panel-title">EVENT NAME</h2><img src="GKLogo.jpg" class="icon">
   </div>
   <div class="panel-body">
     <h3>NAME OF ORGANIZATION</h3>
@@ -35,7 +35,7 @@
       </div>
         70 More Volunteers needed!
     </div>
-    <button type="button" class="btn btn-default">Pledge Now!</button>
+    <a href="LINK TO EVENT PAGE"><button type="button" class="btn btn-default">Pledge Now!</button></a>
   </div>
 </div>
 @endsection

@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('content')
+<div class="container" style="padding: 0 0 20px 0; margin: 0px !important; width: 100%">
 <div id="myCarousel" class="carousel slide " data-ride="carousel">
+  <div class="col-md-12">
+    <div class="main-text col-md-12 text-center" style="z-index: 100">
+      <h1>Avad INSERT LOGO HERE</h1>
+    </div>
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -11,7 +16,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox" >
     <div class="item active">
-      <img src="yolandaScaled.jpg" alt="Yolanda">
+      <img src="yolandaScaledDark.jpg" alt="Yolanda">
       <div class="carousel-caption">
         <h3>Aid Existing Relief Campaigns</h3>
         <p>Donate to the victims of Yolanda Right Now!</p>
@@ -19,7 +24,7 @@
       </div>
     </div>
     <div class="item">
-      <img src="coastCleanScaled.jpg" alt="Coast Cleaning">
+      <img src="coastCleanScaledDark.jpg" alt="Coast Cleaning">
       <div class="carousel-caption">
         <h3>International Coast Cleaning</h3>
         <p>Join efforts to create a cleaner environment!</p>
@@ -28,7 +33,7 @@
     </div>
 
     <div class="item">
-      <img src="teachScaled.jpg" alt="Color Run">
+      <img src="teachScaledDark.jpg" alt="Color Run">
       <div class="carousel-caption">
         <h3>Teach the Filipinos of Tomorrow!</h3>
         <p>Teach for the Philippines</p>
@@ -37,10 +42,10 @@
       </div>
     </div>
     <div class="item">
-      <img src="bloodDriveScaled.jpg" alt="Blood Drive">
+      <img src="GK1Dark.jpg" alt="Gawad Kalinga">
       <div class="carousel-caption">
-        <h3>Donate Blood for a Cause!</h3>
-        <p>Find Beneficiaries right now</p>
+        <h3>Help Build a Better Community!</h3>
+        <p>Gawad Kalinga</p>
         <p><a href="{{ url('/register') }}" class="btn btn-lg btn-primary">Sign up now!</a>
       </div>
     </div>
@@ -55,29 +60,33 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>
+</div>
 
-<div class="container" style="padding-top: 1.5em">
+<div class="container-fluid">
   <h1 class="text-center">Team Codix</h1>
   <div class="row" style="padding-top: 1.5em">
-    <div class="col-lg-4">
+    <div class="col-lg-6">
       <img class="img-circle">
       <h2 class="text-center">Gab Lopez</h2>
       <p class="text-center">DESCRIPTION</p>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-6">
       <img class="img-circle">
       <h2 class="text-center">Aaron Ramos</h2>
       <p class="text-center">DESCRIPTION</p>
     </div>
-    <div class="col-lg-4">
-      <img class="img-circle">
-      <h2 class="text-center">Makki Villaluz</h2>
-      <p class="text-center">DESCRIPTION</p>
-    </div>
-    <div class="col-lg-4">
-      <img class="img-circle">
-      <h2 class="text-center">Sean Ryan Chan</h2>
-      <p class="text-center">DESCRIPTION</p>
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-circle">
+        <h2 class="text-center">Makki Villaluz</h2>
+        <p class="text-center">DESCRIPTION</p>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-circle">
+        <h2 class="text-center">Sean Ryan Chan</h2>
+        <p class="text-center">DESCRIPTION</p>
+      </div>
     </div>
   </div>
 </div>
