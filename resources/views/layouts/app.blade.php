@@ -36,14 +36,20 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'Avad') }}
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+			<li><a href="{{ url('/home') }}">Home</a></li>
+		    @if (Auth::guest())
+		    @else
+			    @if (Auth::user()->organization === "1")
+				<li><a href="{{ url('/create') }}">Create Event</a></li>
+			    @endif
+		    @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->

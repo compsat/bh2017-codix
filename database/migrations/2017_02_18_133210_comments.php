@@ -21,9 +21,9 @@ class Comments extends Migration
 			->references('id')->on('events')
 			->onDelete('cascade');
 		$table->longText('description');
-	});
 		$table->string('title');
 		$table->timestamps();
+	});
     }
 
     /**
