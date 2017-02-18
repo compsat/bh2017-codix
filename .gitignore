@@ -5,4 +5,9 @@
 /.idea
 Homestead.json
 Homestead.yaml
+<<<<<<< HEAD
 *.swp
+=======
+
+*.swp
+>>>>>>> a165a041a93f14eb0ec44dfbea4025f66c7018a7

@@ -26,16 +26,27 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="row">
-  <div class="col-sm-6 col-md-4">
+<div class="row" style="padding-top: 1.5em">
+  <div class="col-md-6 col-md-1">
     <div class="thumbnail">
-      <img src="" alt="">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <h1 class="text-center">Thumbnail label</h1>
+        <p>DESCRIPTION</p>
       </div>
     </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <h1 class="text-center">Thumbnail label</h1>
+        <p>DESCRIPTION</p>
+    </div>
   </div>
-</div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <h1 class="text-center">Thumbnail label</h1>
+        <p>DESCRIPTION</p>
+    </div>
+  </div>
+  </div>
 @endsection

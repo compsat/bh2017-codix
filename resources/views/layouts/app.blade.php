@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="shortcut icon" href="favicon.png">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Avad') }}</title>
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -36,14 +36,20 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                      <img src="favicon128.png" height="30px" width="30px" style="padding-top:0"/>
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+			<li><a href="{{ url('/home') }}">Home</a></li>
+		    @if (Auth::guest())
+		    @else
+			    @if (Auth::user()->organization === "1")
+				<li><a href="{{ url('/create') }}">Create Event</a></li>
+			    @endif
+		    @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->
