@@ -21,7 +21,6 @@ class Events extends Migration
 	    $table->integer('donations');
 	    $table->string('type');
 	    $table->integer('goal');
-	    $table->string('date');
 	    $table->string('location');
 	    $table->string('tag');
 	    $table->timestamps();

@@ -28,7 +28,6 @@ class EventRequest extends FormRequest
 		'description' => 'required',
 		'type' => 'required',
 		'goal' => 'required',
-		'date' => 'required',
 		'location' => 'required|max:255',
 		'author' => 'required',
 		'tag' => 'required',

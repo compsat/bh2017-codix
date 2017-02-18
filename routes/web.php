@@ -23,13 +23,18 @@ Auth::routes();
 Route::get('/home', 'EventController@index');
 
 //Routing for showing individual events
-Route::get('/event/{id}', 'EventController@show');
+Route::get('/event/{id}',
+       ['as' => 'event_show', 'uses' => 'EventController@show']);
+
+//creates comments
+Route::post('/event/{id}',
+	['as' => 'comment_create', 'uses' => 'CommentController@create']);
 
 //creating events
 Route::post('/create',
 	['as' => 'event_create', 'uses' => 'EventController@create']);
 //showing the form for creating events
 Route::get('/create',
-	['as' => 'event_show', 'uses' => 'EventController@showCreate']);
+	['as' => 'create_show', 'uses' => 'EventController@showCreate']);
 
 

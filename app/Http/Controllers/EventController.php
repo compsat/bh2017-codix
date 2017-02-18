@@ -27,7 +27,6 @@ class EventController extends Controller
 			'description' => $data['description'],
 			'type' => $data['type'],
 			'goal' => $data['goal'],
-			'date' => $data['date'],
 			'location' => $data['location'],
 			'author' => $user['Name'],
 			'tag' => $data['tag'],
