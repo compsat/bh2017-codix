@@ -10,7 +10,7 @@ class Comment extends Model
 	[
 		'description', 'title',
 	];
-
+	
 	public function event()
 	{
 		return $this->belongsTo('App\Event');

@@ -72,7 +72,7 @@
                             <div class="col-md-6">
 				<select name = "tag" id='tag' class="form-control">
 						<option value="Service" selected>Service</option>
-						<option value="Produce">Produce</option>
+						<option value="Supplies">Supplies</option>
 						<option value="Donation">Donation</option>
 				</select>
 

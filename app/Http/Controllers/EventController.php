@@ -36,7 +36,7 @@ class EventController extends Controller
 
 	public function show(Request $request , $id)
 	{
-		$event = DB::table('events')->where('id', $id)->first();
+		$event = Event::find($id);
 		return view("event", ['event' => $event]);
 	}	
 

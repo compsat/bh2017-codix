@@ -22,4 +22,9 @@ class CommentController extends Controller
 			'Event_id' => $id,
 		]);
 	}	
+	public function index()
+	{
+		return DB::table('comments')->get();
+	}
+	
 }

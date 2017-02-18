@@ -9,6 +9,9 @@
 	</div>
 	<div class = "col-md-4">
 		<div class ="panel panel-default">
+			<div class = "panel-heading">
+				<h4 class = "text-center"> <strong> Info </strong> </h3>
+			</div>
 			<div class = "panel-body">
 				<h3>{{$event -> donations}} out of {{$event -> goal}} {{$event->type}} </h3>
 				<h3><span class = "glyphicon glyphicon-map-marker"></span> {{$event -> location}} </h3>
@@ -20,10 +23,21 @@
 	</div>
 	<div class = "col-md-8">
 		<div class = "panel panel-default">
-			@foreach ($event->comments as $comment)	
-				{{ $comment->title }}
-				{{ $comment->description }}
-			@endforeach
+			<div class = "panel-heading">
+				<h4 class = "text-center"> <strong> Updates </strong></h4>
+			</div>
+			<div class = "panel-body">
+				@if ($event->comments->count() > 0)
+					@foreach ($event->comments as $comment)
+					<div class = "media">
+						<div class = "media-body">
+						<div class = "media-heading"> <h3>{{ $comment->title }} <small><i>Posted on {{$comment -> created_at}} </i> </small> </h3> </div>
+						<h4>{{ $comment->description}} </h4>
+					@endforeach	
+				@else
+					<h4 class = "text-center">No updates</h4>		
+				@endif
+			</div>
 		</div>
 	</div>
 </div>

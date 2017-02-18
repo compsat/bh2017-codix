@@ -1,11 +1,13 @@
 @extends('layouts.app')
 @section('content')
 
+<div class = "container">
 @foreach ($events as $event)
-<div class="panel panel-default col-md-4">
+<div class = "col-md-6">
+<div class="panel panel-default">
   <div class="panel-heading">
     {{ $event->tag  }}
-    <h2 class="panel-title">{{ $event->title }}</h2><img src="teachLogo.jpg" class="icon">
+    <h2 class="panel-title">{{ $event->title }}</h2><img src="teachLogo.png" class="icon">
   </div>
   <div class="panel-body">
     <h3>NAME OF ORGANIZATION</h3><img src="teachScaled.jpg" class="right" style="width: 15%; height: 15%">
@@ -40,6 +42,8 @@
     </div>
     <a href="LINK TO EVENT PAGE"><button type="button" class="btn btn-default">Pledge Now!</button></a>
   </div>
+</div> 
+</div>
 
 <!-- </div>
 =======

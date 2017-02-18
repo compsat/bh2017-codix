@@ -3,9 +3,8 @@
 <div class="container" style="padding: 0 0 20px 0; margin: 0px !important; width: 100%">
 <div id="myCarousel" class="carousel slide " data-ride="carousel">
   <div class="col-md-12">
-    <div class="main-text col-md-12 text-center" style="z-index: 100; padding-top: 100px">
-      <h1>Avad INSERT LOGO HERE</h1>
-      <a href="{{url ('/register')}}" type="button" class="btn btn-clear btn-lg">Sign Up</a>
+    <div class="main-text col-md-2 text-center" style="z-index: 100; padding-top: 50px">
+    <img src="loler.png" width="250" height="200"/>
     </div>
   <!-- Indicators -->
   <ol class="carousel-indicators">
