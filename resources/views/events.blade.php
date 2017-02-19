@@ -54,7 +54,6 @@
 				{{ $event->tag  }} 
 			</div>
 			<div class = "panel-body">
-				<img src="picture.jpg"/>
 				<h4><strong><a href="/event/{{$event->id}}">{{ $event->title }}</a></strong></h4>
 				<p><span class= "glyphicon glyphicon-user"></span> {{$event->author}}</p>
 				<p><span class= "glyphicon glyphicon-map-marker"></span> {{ $event->location}} </p>

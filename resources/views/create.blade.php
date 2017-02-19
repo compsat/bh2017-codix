@@ -96,10 +96,6 @@
                                 @endif
                             </div>
 			</div>
-			<div class = "form-group">
-				<div class ="col-md-6 col-md-offset-4">
-					<input type="file" name="picture"></input>
-				</div>
 			</div>
 			{{ csrf_field() }}
 			<div class="form-group">
