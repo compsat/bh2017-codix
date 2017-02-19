@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<div class = "container">
+<!--<div class = "container">
 @foreach ($events as $event)
 <div class = "col-md-6">
 <div class="panel panel-default">
@@ -43,10 +43,9 @@
     <a href="LINK TO EVENT PAGE"><button type="button" class="btn btn-default">Pledge Now!</button></a>
   </div>
 </div> 
-</div>
+</div>-->
 
-<!-- </div>
-=======
+</div>
 <div class = "container">
 	@foreach ($events as $event)
 	<div class = "col-md-6">
@@ -59,10 +58,15 @@
 				<h4><strong><a href="/event/{{$event->id}}">{{ $event->title }}</a></strong></h4>
 				<p><span class= "glyphicon glyphicon-map-marker"></span> {{ $event->location}} </p>
 				<p> {{$event->donations}} out of {{$event->goal}} {{$event->type}}</p>
+				<p><span class = "glyphicon glyphicon-time"></span> Deadline {{$event->deadline}}</p>
+				@if (Auth::user()->organization === '0')
+				<a href="event/{{$event->id}}">See more</a>
+				@endif
 			</div>
 		</div>
 	</div>
 	@endforeach
-</div> -->
+</div>
 
+{{$events->links()}}
 @endsection

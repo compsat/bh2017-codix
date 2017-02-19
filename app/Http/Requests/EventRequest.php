@@ -31,6 +31,7 @@ class EventRequest extends FormRequest
 		'location' => 'required|max:255',
 		'author' => 'required',
 		'tag' => 'required',
+		'deadline' => 'required',
         ]);
     }
 }

@@ -83,6 +83,20 @@
                                 @endif
                             </div>
 			</div>
+			<div class="form-group{{ $errors->has('deadline') ? ' has-error' : '' }}">
+                            <label for="deadline" class="col-md-4 control-label">Deadline</label>
+
+                            <div class="col-md-6">
+                                <input id="deadline" type="text" class="form-control" name="deadline" value="{{ old('deadline') }}" required autofocus>
+
+                                @if ($errors->has('deadline'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('deadline') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+			</div>
+
 			{{ csrf_field() }}
 			<div class="form-group">
                             <div class="col-md-6 col-md-offset-4">

@@ -24,6 +24,7 @@ class Events extends Migration
 	    $table->string('author');
 	    $table->string('location');
 	    $table->string('tag');
+	    $table->string('deadline');
 	    $table->timestamps();
 	});	    
     }
