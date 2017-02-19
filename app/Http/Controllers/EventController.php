@@ -17,7 +17,7 @@ class EventController extends Controller
 	}	
 	public function index()
 	{
-		$events = DB::table('events')->latest()->paginate(4);
+		$events = DB::table('events')->latest()->paginate(6);
 		return view('events', ['events' => $events]);
 	}
 	
@@ -25,7 +25,8 @@ class EventController extends Controller
 	{
 		$data = $request->all();
 		$user = Auth::user();
-
+		$picture = request()->file('picture');
+		$picture->storeAs('public/pictures/' . $data['title'] , 'picture.jpg');
 		Event::create([
 			'title' => $data['title'],
 			'description' => $data['description'],

@@ -8,7 +8,7 @@ class Comment extends Model
 {
 	protected $fillable =
 	[
-		'description', 'title',
+		'description', 'title', 'Event_id',
 	];
 	
 	public function event()

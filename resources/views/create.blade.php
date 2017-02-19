@@ -6,7 +6,7 @@
 	<div class = "panel panel-default">
 		<div class= "panel-heading">Create Event</div>
 		<div class= "panel-body">
-			<form class="form-horizontal" role="form" method="POST">
+			<form class="form-horizontal" role="form" method="POST" enctype="multipart/form-data">
 			<div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
                             <label for="title" class="col-md-4 control-label">Title</label>
 
@@ -96,7 +96,11 @@
                                 @endif
                             </div>
 			</div>
-
+			<div class = "form-group">
+				<div class ="col-md-6 col-md-offset-4">
+					<input type="file" name="picture"></input>
+				</div>
+			</div>
 			{{ csrf_field() }}
 			<div class="form-group">
                             <div class="col-md-6 col-md-offset-4">

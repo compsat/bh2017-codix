@@ -25,6 +25,7 @@ class CommentController extends Controller
 			'description' => $data['description'],
 			'Event_id' => $id,
 		]);
+		return Redirect::to('/home');
 	}	
 	public function index()
 	{

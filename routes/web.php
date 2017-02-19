@@ -37,4 +37,7 @@ Route::post('/create',
 Route::get('/create',
 	['as' => 'create_show', 'uses' => 'EventController@showCreate']);
 
+Route::post('/event/confirm_create/{id}',
+	['as' => 'confirm_create', 'uses' => 'VolunteerController@create']);
 
+Route::get('event/volunteers/{id}', "VolunteerControl@show");
