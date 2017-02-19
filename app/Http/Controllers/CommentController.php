@@ -11,6 +11,10 @@ use Redirect;
 
 class CommentController extends Controller
 {
+	public function __construct()
+	{
+		$this->middleware("auth");
+	}	
 	public function create(Request $request, $id)
 	{
 		$data = $request->all();

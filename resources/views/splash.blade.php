@@ -16,14 +16,14 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox" >
     <div class="item active">
-      <img src="yolandaScaledDark.jpg" alt="Yolanda">
+      <img src="yolandaScaledDark.jpg" alt="Yolanda" class="img-responsive">
       <div class="carousel-caption">
         <h3>Aid Existing Relief Campaigns</h3>
         <p>Donate to the victims of Yolanda Right Now!</p>
       </div>
     </div>
     <div class="item">
-      <img src="coastCleanScaledDark.jpg" alt="Coast Cleaning">
+      <img src="coastCleanScaledDark.jpg" alt="Coast Cleaning" class="img-responsive">
       <div class="carousel-caption">
         <h3>International Coast Cleaning</h3>
         <p>Join efforts to create a cleaner environment!</p>
@@ -31,7 +31,7 @@
     </div>
 
     <div class="item">
-      <img src="teachScaledDark.jpg" alt="Color Run">
+      <img src="teachScaledDark.jpg" alt="Color Run" class="img-responsive">
       <div class="carousel-caption">
         <h3>Teach the Filipinos of Tomorrow!</h3>
         <p>Teach for the Philippines</p>

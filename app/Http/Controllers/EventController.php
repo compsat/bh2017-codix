@@ -11,6 +11,10 @@ use Redirect;
 
 class EventController extends Controller
 {
+	public function __construct()
+	{
+		$this->middleware("auth");
+	}	
 	public function index()
 	{
 		$events = DB::table('events')->latest()->paginate(4);

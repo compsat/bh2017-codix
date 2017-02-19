@@ -48,16 +48,17 @@
 </div>
 <div class = "container">
 	@foreach ($events as $event)
-	<div class = "col-md-6">
+	<div class = "col-md-4">
 		<div class = "panel panel-default">
-			<div class = "panel-heading">
-				{{ $event->tag  }}
+			<div class = "panel-heading" style="color:white;">
+				{{ $event->tag  }} 
 			</div>
 			<div class = "panel-body">
 
 				<h4><strong><a href="/event/{{$event->id}}">{{ $event->title }}</a></strong></h4>
+				<p><span class= "glyphicon glyphicon-user"></span> {{$event->author}}</p>
 				<p><span class= "glyphicon glyphicon-map-marker"></span> {{ $event->location}} </p>
-				<p> {{$event->donations}} out of {{$event->goal}} {{$event->type}}</p>
+				<p><span class= "glyphicon glyphicon-flag"></span> {{$event->donations}} out of {{$event->goal}} {{$event->type}}</p>
 				<p><span class = "glyphicon glyphicon-time"></span> Deadline {{$event->deadline}}</p>
 				@if (Auth::user()->organization === '0')
 				<a href="event/{{$event->id}}">See more</a>

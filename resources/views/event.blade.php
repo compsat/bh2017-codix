@@ -10,16 +10,22 @@
 	<div class = "col-md-4">
 		<div class ="panel panel-default">
 			<div class = "panel-heading">
-				<h3 class = "text-center"> <strong> Info </strong> </h3>
+				<h4 class = "text-center"> <strong> Info </strong> </h4>
 			</div>
 			<div class = "panel-body">
-				@if (Auth::user()->username === $event->author)
-				<h4>{{$event -> donations}} out of {{$event -> goal}} {{$event->type}} </h4>
+			<div class = "text-center">
+			@if (Auth::user()->organization === '0')
+				<input type="button" class="btn btn-success" value="Help out"/>
+			@elseif (Auth::user()->username === $event->author)
+				<input type="button" class="btn btn-success" value="Make an announcement"/>
+			@endif
+			</div>
+				<h4><span class= "glyphicon glyphicon-flag"></span> {{$event -> donations}} out of {{$event -> goal}} {{$event->type}} </h4>
 				<h4><span class ="glyphicon glyphicon-time"></span> Deadline {{$event->deadline}}</h4>
 				<h4><span class = "glyphicon glyphicon-map-marker"></span> {{$event -> location}} </h4>
 				<h4><span class = "glyphicon glyphicon-user"></span> {{$event->author}}</h4>
 				<h4> <span class = "glyphicon glyphicon-unchecked"> </span> {{$event -> tag}}</h4>
-				<h4>{{$event->description}}</h4>
+				<pre class= "pre-scrollable">{{$event->description}}</pre>
 			</div>
 		</div>
 	</div>
