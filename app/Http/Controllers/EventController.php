@@ -25,8 +25,6 @@ class EventController extends Controller
 	{
 		$data = $request->all();
 		$user = Auth::user();
-		$picture = request()->file('picture');
-		$picture->storeAs('public/pictures/' . $data['title'] , 'picture.jpg');
 		Event::create([
 			'title' => $data['title'],
 			'description' => $data['description'],
